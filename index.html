@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title>Twitter Application</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel='stylesheet' href='style.css' />
+</head>
+<body>
+	<div class="wrapper">
+		<div class ="profile">
+		   <div style = "float:left" id="profile">
+		   </div>
+        </div>
+        <div class="newtweet">   
+		     <form action="/new/tweet/" method="POST">
+		     	<input type="textarea" name="tweet" placeholder="write your tweet"/>
+		     	<button type="submit">Post</button> 
+		     </form>
+		</div>     
+		     <br/>
+		<div class="recenttweets">      
+		     <h3>Recent Tweets</h3>
+		      <ul id ="twitter-text">
+		     </ul>
+		     <div id ="update-area">
+		     </div>
+		</div>     
+		     <script src='script.js'></script>
+	</div>
+</body>
+</html>
